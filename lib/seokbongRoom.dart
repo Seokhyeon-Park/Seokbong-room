@@ -22,10 +22,11 @@ class SeokbongRoom extends FlameGame with HasKeyboardHandlerComponents {
   Future<void> onLoad() async {
     // 이미지 리소스 로드
     await images.loadAll([
-      'CITY_MEGA.png',
+      // 'CITY_MEGA.png',
       'ember.png',
     ]);
 
+    // 배경 이미지 설정
     // _background = SpriteComponent(
     //   sprite: await Sprite.load('background.png'),
     // );

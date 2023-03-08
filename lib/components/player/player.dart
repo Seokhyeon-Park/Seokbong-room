@@ -78,6 +78,7 @@ class Player extends SpriteAnimationComponent with KeyboardHandler, HasGameRef<S
 
     // 좌우 벽에 닿았는지 확인
     // 벽에서 팅겨냄, (*주의) 키를 계속 누르고 있으면 계속 해당 방향을 향함
+    // 아래 코드를 지워도 문제는 없음. (케릭터가 벽을 넘어갈 뿐)
     if (position.x <= 0) { // 좌측 벽에 닿은 경우
       horizontalDirection = 1; // 오른쪽으로 이동하도록 방향을 변경
       position.x = 0; // 위치를 벽에 붙도록 수정
